@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+.container-fluid.toAsk .toQuestions {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container-fluid.toAsk .link-ask {
+    text-decoration: none;
+}
+
+.toAsk .ask-container {
+    overflow: hidden;
+    padding: 10px 5px 10px 5px;
+}
+
+.toAsk .ask-container .content .group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2px;
+}
+
+.toAsk .ask-container .content .group a {
+    background-color: #FFF;
+    color: #333;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.toAsk .ask-container .content .description {
+    color: #ddd;
+}
+
+.toAsk .ask-container .content .group2 form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.toAsk .ask-container .content .group2 input {
+    width: 80%;
+    outline: none;
+    padding: 0px 5px 0px 5px;
+    border: 0;
+}
+
+.toAsk .ask-container .content .group2 .input-id {
+    display: none;
+}
+
+.toAsk .ask-container .content .group2 button {
+    padding: 0px 10px 0px 10px ;
+    border: none;
+    border-radius: 3px;
+}
+
+.toAsk .ask-container .content .qts {
+    overflow-y: auto;
+    max-height: 230px;
+
+}
+
+.toAsk .ask-container .content + .content {
+    margin-top: 2.2rem;
+}

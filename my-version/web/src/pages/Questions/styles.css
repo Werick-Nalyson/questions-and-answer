@@ -1,0 +1,36 @@
+.container.questions {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.container.questions form {
+    background-color: var(--color-box-base);
+    padding: 5rem;
+    margin-top: 1.6rem;
+    border-radius: 8px;
+}
+
+.container.questions form input,
+.container.questions form textarea {
+    font: 400 1.6rem Poppins;
+    color: var(--color-text-base);
+}
+
+.container.questions form input {
+    height: 3.6rem;
+}
+
+.container.questions form textarea {
+    height: 6.8rem;
+    min-height: 3rem;
+}
+
+.container.questions form button {
+    font: 400 1.6rem Poppins;
+    height: 3.6rem;
+    border-radius: 8px;
+}
