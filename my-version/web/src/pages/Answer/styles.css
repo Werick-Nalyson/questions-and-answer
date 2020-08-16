@@ -5,9 +5,28 @@
 .container-fluid.toAsk .toQuestions {
     padding-top: 5rem;
     padding-bottom: 3rem;
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
+    border-bottom: 1.5px solid #21194D;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.container-fluid.toAsk .toQuestions h1 {
+    color: #ddd;
+}
+.container-fluid.toAsk .toQuestions a {
+    padding: 5px;
+    color: var(--color-text-base);
+    transition: 0.5s !important;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.container-fluid.toAsk .toQuestions a:hover {
+    transition: border-bottom 0.5s !important;
+    color: #4d3ea1;
+    /* border-bottom: 0.01rem solid var(--color-text-base); */
 }
 
 .container-fluid.toAsk .link-ask {
@@ -33,8 +52,10 @@
     padding: 10px;
 }
 
-.toAsk .ask-container .content .description {
+.toAsk .ask-container .content .group h3 {
     color: #ddd;
+    display: flex;
+    align-items: center;
 }
 
 .toAsk .ask-container .content .group2 form {
@@ -47,19 +68,17 @@
 
 .toAsk .ask-container .content .group2 input {
     width: 80%;
+    padding: 5px;
     outline: none;
-    padding: 0px 5px 0px 5px;
+    background-color: #24173b;
+    border-radius: 8px;
+    color: #ddd;
+    /* padding: 0px 5px 0px 5px; */
     border: 0;
 }
 
 .toAsk .ask-container .content .group2 .input-id {
     display: none;
-}
-
-.toAsk .ask-container .content .group2 button {
-    padding: 0px 10px 0px 10px ;
-    border: none;
-    border-radius: 3px;
 }
 
 .toAsk .ask-container .content .qts {

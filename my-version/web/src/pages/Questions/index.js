@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import api from '../../services/api';
+import { Link, useHistory } from 'react-router-dom';
+import { FaQuestion, FaArrowLeft } from 'react-icons/fa';
 
 import './styles.css';
 
 function Questions() {
-
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+
+    const history = useHistory();
 
     function handleCreateQuestion(e) {
         e.preventDefault();
@@ -15,7 +18,7 @@ function Questions() {
             title,
             description
         }).then(() => {
-            alert("Cadastrado com sucesso.");
+            history.push('/');
         }).catch((err) => {
             alert(err);
         });
@@ -23,7 +26,8 @@ function Questions() {
 
     return(
         <div className="container questions">
-            <h1>Realizar pergunta</h1>
+            <Link to="/" className="back"><FaArrowLeft /></Link>
+            <h1>Realizar pergunta &nbsp; <FaQuestion /></h1>
             <form onSubmit={ handleCreateQuestion }>
                 <div className="form-group">
                     <label htmlFor="title">Título</label>
@@ -32,6 +36,7 @@ function Questions() {
                         className="form-control"
                         value={title}
                         onChange={e => setTitle(e.target.value)}
+                        autoComplete="off"
                     />
                 </div>
 
@@ -42,11 +47,12 @@ function Questions() {
                         className="form-control"
                         value={description}
                         onChange={e => setDescription(e.target.value)}
+                        autoComplete="off"
                     />
                 </div>
 
                 <div className="form-group">
-                    <button type="submit" className="btn btn-primary btn-block" >Enviar pergunta</button>
+                    <button type="submit" className="btn button-send text-light btn-block">Enviar pergunta</button>
                 </div>
 
             </form>

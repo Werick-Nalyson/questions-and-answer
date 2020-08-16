@@ -1,0 +1,14 @@
+.button{
+    background: #32264D;
+    background-color: #24173b;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    width: 75px;
+    transition: all 0.5s;
+    outline: none;
+}
+.button:hover {
+    opacity: 0.6;
+  }
