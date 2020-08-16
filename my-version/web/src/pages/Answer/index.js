@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaQuestion, FaRegQuestionCircle } from 'react-icons/fa';
 
 import Button from '../../components/Button';
+import Footer from '../../components/Footer'
 
 import './styles.css';
 
@@ -87,6 +88,7 @@ function Questions() {
                 ))}
 
             </div>
+            <Footer />
         </div>
     );
 }

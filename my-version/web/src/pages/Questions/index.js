@@ -3,6 +3,8 @@ import api from '../../services/api';
 import { Link, useHistory } from 'react-router-dom';
 import { FaQuestion, FaArrowLeft } from 'react-icons/fa';
 
+import Footer from '../../components/Footer';
+
 import './styles.css';
 
 function Questions() {
@@ -56,6 +58,7 @@ function Questions() {
                 </div>
 
             </form>
+            <Footer />
         </div>
     );
 }
